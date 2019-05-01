@@ -1,4 +1,4 @@
-This is an implementation of ECIR2019 paper :  
+This is an implementation of ECIR 2019 paper :  
 Unsupervised Explainable Controversy Detection from Online News 
 [Paper Link](http://maroo.cs.umass.edu/pub/web/getpdf.php?id=1334)
 
@@ -6,14 +6,17 @@ Unsupervised Explainable Controversy Detection from Online News
 #### Requirements
 
 * Python 3.6
-
+* tensorflow=1.12.0
 
 #### Input Data
 
-* Most data are stored in pickle (v3)
+* Most data are stored in pickle format(v3)
 * All input data for article and comments are already converted into array of term indices.
-* voca2idx.pickle contains the term to index matching information
- 
+  * code_articles.pickle : List of articles
+  * code_comments.pickle : List of comments. 
+  * For structure of each pickle's content, read the functions in load_data.py  
+* voca2idx.pickle contains the term to index conversion information
+  * Using it, you can write code to recover original texts of the articles and comments.  
 
 #### Training
 
@@ -40,11 +43,9 @@ alignment moves in wikipedia talk pages.
 
 * Model 
   * Convolutional Neural Network based (cnn.py)
-  
 
 
-
-#### ETC
+#### Contact
 
 
 contact : youngwookim@cs.umass.edu
