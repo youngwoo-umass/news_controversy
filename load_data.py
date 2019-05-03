@@ -81,6 +81,16 @@ def tokenize_encode(text, voca2idx, comment_length):
     return result
 
 
+def reverse_voca(word2idx):
+    OOV = 1
+    PADDING = 0
+    idx2word = dict()
+    idx2word[1] = "OOV"
+    idx2word[0] = "PADDING"
+    idx2word[3] = "LEX"
+    for word, idx in word2idx.items():
+        idx2word[idx] = word
+    return idx2word
 
 def format_comment(comments, voca2idx, comment_length):
     # comments : List[(Content, Label)]
