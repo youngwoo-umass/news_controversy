@@ -1,12 +1,19 @@
 This is an implementation of ECIR 2019 paper :  
-Unsupervised Explainable Controversy Detection from Online News 
-[Paper Link](http://maroo.cs.umass.edu/pub/web/getpdf.php?id=1334)
+Unsupervised Explainable Controversy Detection from Online News : [Paper Link](http://maroo.cs.umass.edu/pub/web/getpdf.php?id=1334)
+
+#### Data Downloads
+
+Download the following link and unpack it to the data directory.
+
+[Data Download](https://drive.google.com/file/d/1g6yh77tBgWlgXcKCLULLBVcUt7Xvs1JE/view?usp=sharing)
+
 
 
 #### Requirements
 
 * Python 3.6
-* tensorflow=1.12.0
+* tensorflow=1.8.0
+
 
 #### Input Data
 
